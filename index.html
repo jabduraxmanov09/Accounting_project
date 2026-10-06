@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accounting Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Accounting Project</h1>
+    <p class="subtitle">Oddiy buxgalteriya hisobi</p>
+    <section class="form">
+      <input id="description" placeholder="Operatsiya nomi">
+      <input id="amount" type="number" min="0" step="0.01" placeholder="Summa">
+      <select id="type"><option value="income">Daromad</option><option value="expense">Xarajat</option></select>
+      <button id="add">Qo‘shish</button>
+    </section>
+    <section class="cards">
+      <div><span>Daromad</span><strong id="income">0 so‘m</strong></div>
+      <div><span>Xarajat</span><strong id="expense">0 so‘m</strong></div>
+      <div><span>Balans</span><strong id="balance">0 so‘m</strong></div>
+    </section>
+    <h2>Operatsiyalar</h2>
+    <table><thead><tr><th>Nomi</th><th>Turi</th><th>Summa</th><th></th></tr></thead><tbody id="transactions"></tbody></table>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
